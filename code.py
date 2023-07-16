@@ -33,3 +33,6 @@ while True:
     # Exit if 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+# Release video capture and close windows
+video_capture.release()
+cv2.destroyAllWindows()
